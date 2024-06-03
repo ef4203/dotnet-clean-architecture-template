@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TemplateApp.Domain", "src\Contoso.TemplateApp.Domain\Contoso.TemplateApp.Domain.csproj", "{38E7C7AE-98F1-49D9-977E-865E3E1CA7F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TemplateApp.Infrastructure", "src\Contoso.TemplateApp.Infrastructure\Contoso.TemplateApp.Infrastructure.csproj", "{30CAA2DC-C889-4C2F-B303-FC9198687F00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TemplateApp.Application", "src\Contoso.TemplateApp.Application\Contoso.TemplateApp.Application.csproj", "{9BF614C9-C7DD-41D3-8471-802C0EE74C7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TemplateApp.UnitTests", "tests\Contoso.TemplateApp.UnitTests\Contoso.TemplateApp.UnitTests.csproj", "{F5CD04FF-F864-45B4-9C48-F87786FE661F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TemplateApp.IntegrationTests", "tests\Contoso.TemplateApp.IntegrationTests\Contoso.TemplateApp.IntegrationTests.csproj", "{2E6D7269-1071-4BE8-844A-58B8B1571BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso.TemplateApp.Web", "src\Contoso.TemplateApp.Web\Contoso.TemplateApp.Web.csproj", "{A9C147A1-837F-4FC8-9ED5-34ABD611D5D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38E7C7AE-98F1-49D9-977E-865E3E1CA7F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E7C7AE-98F1-49D9-977E-865E3E1CA7F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E7C7AE-98F1-49D9-977E-865E3E1CA7F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E7C7AE-98F1-49D9-977E-865E3E1CA7F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30CAA2DC-C889-4C2F-B303-FC9198687F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30CAA2DC-C889-4C2F-B303-FC9198687F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30CAA2DC-C889-4C2F-B303-FC9198687F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30CAA2DC-C889-4C2F-B303-FC9198687F00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BF614C9-C7DD-41D3-8471-802C0EE74C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF614C9-C7DD-41D3-8471-802C0EE74C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF614C9-C7DD-41D3-8471-802C0EE74C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF614C9-C7DD-41D3-8471-802C0EE74C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5CD04FF-F864-45B4-9C48-F87786FE661F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5CD04FF-F864-45B4-9C48-F87786FE661F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5CD04FF-F864-45B4-9C48-F87786FE661F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5CD04FF-F864-45B4-9C48-F87786FE661F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E6D7269-1071-4BE8-844A-58B8B1571BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E6D7269-1071-4BE8-844A-58B8B1571BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E6D7269-1071-4BE8-844A-58B8B1571BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E6D7269-1071-4BE8-844A-58B8B1571BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9C147A1-837F-4FC8-9ED5-34ABD611D5D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C147A1-837F-4FC8-9ED5-34ABD611D5D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C147A1-837F-4FC8-9ED5-34ABD611D5D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C147A1-837F-4FC8-9ED5-34ABD611D5D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
