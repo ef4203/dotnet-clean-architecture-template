@@ -1,0 +1,23 @@
+name: .NET Format
+
+on:
+  push:
+    branches: [ "master" ]
+    paths:
+      - "**/*.cs"
+  pull_request:
+    branches: [ "master" ]
+    paths:
+      - "**/*.cs"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
+      - name: Restore dependencies
+        run: dotnet format --verify-no-changes
