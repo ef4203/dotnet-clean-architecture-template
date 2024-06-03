@@ -2,11 +2,9 @@
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Contoso.TemplateApp.Application\Contoso.TemplateApp.Application.csproj" />
+        <ProjectReference Include="..\Contoso.TemplateApp.Application\Contoso.TemplateApp.Application.csproj"/>
     </ItemGroup>
 </Project>

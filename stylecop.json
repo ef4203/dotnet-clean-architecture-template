@@ -4,6 +4,10 @@
         "layoutRules": {
             "newlineAtEndOfFile": "require"
         },
+        "documentationRules": {
+            "companyName": "Elias Frank",
+            "xmlHeader": false
+        },
         "namingRules": {
             "allowedHungarianPrefixes": [
                 "db",
