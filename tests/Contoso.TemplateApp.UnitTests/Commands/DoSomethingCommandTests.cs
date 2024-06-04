@@ -17,11 +17,37 @@ public class DoSomethingCommandTests
 
         // Act
         await new DoSomethingCommandHandler(Mock.Of<IPublisher>(), service.Object)
-            .Handle(new DoSomethingCommand(), CancellationToken.None);
+            .Handle(default, CancellationToken.None);
 
         // Assert
         service.Verify(
             x => x.DoSomethingExternalAsync(),
             Times.Once);
+    }
+
+    [Test]
+    public void DoSomethingCommandHandler_Constructor_ThrowsArgumentNullException()
+    {
+        // Act
+        var func = () => _ = new DoSomethingCommandHandler(null!, Mock.Of<ISimpleInfrastructureService>());
+
+        // Assert
+        func.Should()
+            .Throw<ArgumentNullException>()
+            .And
+            .ParamName
+            .Should()
+            .Be("publisher");
+
+        // Act
+        func = () => _ = new DoSomethingCommandHandler(Mock.Of<IPublisher>(), null!);
+
+        // Assert
+        func.Should()
+            .Throw<ArgumentNullException>()
+            .And
+            .ParamName
+            .Should()
+            .Be("service");
     }
 }

@@ -10,9 +10,7 @@ public class DomainObject
 
     public event EventHandler<DomainEventArgs>? Events;
 
-#pragma warning disable CA1030
-    protected void RaiseEvent(DomainEventArgs @event)
-#pragma warning restore CA1030
+    protected void PublishEvent(DomainEventArgs @event)
     {
         this.Events?.Invoke(this, @event);
     }

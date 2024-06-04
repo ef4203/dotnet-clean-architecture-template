@@ -11,6 +11,6 @@ public class SimpleDomainObject : DomainObject
 
     public void SomethingHappened()
     {
-        this.RaiseEvent(new SimpleEventArgs("Something happened!"));
+        this.PublishEvent(new SimpleEventArgs("Something happened!"));
     }
 }

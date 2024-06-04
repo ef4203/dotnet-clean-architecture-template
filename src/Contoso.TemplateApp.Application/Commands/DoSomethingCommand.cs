@@ -7,9 +7,9 @@ using Contoso.TemplateApp.Application.Helper;
 using Contoso.TemplateApp.Domain;
 using MediatR;
 
-public sealed record DoSomethingCommand : IRequest;
+public record struct DoSomethingCommand : IRequest;
 
-public class DoSomethingCommandHandler(
+public sealed class DoSomethingCommandHandler(
     IPublisher publisher,
     ISimpleInfrastructureService service)
     : IRequestHandler<DoSomethingCommand>

@@ -13,6 +13,6 @@ public class SimpleController(ISender sender) : ControllerBase
     [HttpGet]
     public async Task IndexAsync()
     {
-        await sender.Send(new DoSomethingCommand());
+        await sender.Send(default(DoSomethingCommand));
     }
 }

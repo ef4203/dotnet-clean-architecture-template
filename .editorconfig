@@ -11,6 +11,7 @@ indent_size = 2
 
 [*.{cs,csproj,sln}]
 charset = utf-8-bom
+max_line_length = 120
 
 # Microsoft .NET properties
 csharp_new_line_before_members_in_object_initializers = true

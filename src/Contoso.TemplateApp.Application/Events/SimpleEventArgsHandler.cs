@@ -6,9 +6,11 @@ using Contoso.TemplateApp.Domain.Events;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-public sealed partial class SimpleEventArgsHandler(ILogger<SimpleEventArgsHandler> logger) : INotificationHandler<SimpleEventArgs>
+public sealed partial class SimpleEventArgsHandler(ILogger<SimpleEventArgsHandler> logger)
+    : INotificationHandler<SimpleEventArgs>
 {
-    private readonly ILogger<SimpleEventArgsHandler> logger = logger ?? throw new ArgumentNullException(nameof(logger));
+    private readonly ILogger<SimpleEventArgsHandler> logger = logger
+        ?? throw new ArgumentNullException(nameof(logger));
 
     public Task Handle(SimpleEventArgs notification, CancellationToken cancellationToken)
     {

@@ -4,6 +4,7 @@ namespace Contoso.TemplateApp.Application.Helper;
 
 using Contoso.TemplateApp.Domain.Generic;
 using MediatR;
+using Microsoft.VisualStudio.Threading;
 
 public static class SubscribeExtension
 {
@@ -14,13 +15,13 @@ public static class SubscribeExtension
 
         domainObject.Events += (_, args) =>
         {
-#pragma warning disable S4462
-#pragma warning disable VSTHRD002
-            publisher.Publish(args)
-                .GetAwaiter()
-                .GetResult();
-#pragma warning restore VSTHRD002
-#pragma warning restore S4462
+            using var taskContext = new JoinableTaskContext();
+            new JoinableTaskFactory(taskContext)
+                .Run(
+                    async () =>
+                    {
+                        await publisher.Publish(args);
+                    });
         };
     }
 }
