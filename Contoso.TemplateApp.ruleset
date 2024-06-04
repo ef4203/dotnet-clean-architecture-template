@@ -122,7 +122,7 @@
         <Rule Id="SA1119" Action="Warning" />          <!-- Statement should not use unnecessary parenthesis -->
         <Rule Id="SA1400" Action="Warning" />          <!-- Access modifier should be declared -->
         <Rule Id="SA1401" Action="Warning" />          <!-- Fields should be private -->
-        <Rule Id="SA1402" Action="None" />          <!-- File may only contain a single type -->
+        <Rule Id="SA1402" Action="None" />             <!-- File may only contain a single type -->
         <Rule Id="SA1403" Action="Warning" />          <!-- File may only contain a single namespace -->
         <Rule Id="SA1404" Action="Warning" />          <!-- Code analysis suppression should have justification -->
         <Rule Id="SA1405" Action="Warning" />          <!-- Debug.Assert should provide message text -->
@@ -194,7 +194,7 @@
         <Rule Id="SA1630" Action="None" />             <!-- Documentation text should contain whitespace -->
         <Rule Id="SA1631" Action="None" />             <!-- Documentation should meet character percentage -->
         <Rule Id="SA1632" Action="None" />             <!-- Documentation text should meet minimum character length -->
-        <Rule Id="SA1633" Action="None" />          <!-- File should have header -->
+        <Rule Id="SA1633" Action="Warning" />          <!-- File should have header -->
         <Rule Id="SA1634" Action="Warning" />          <!-- File header should show copyright -->
         <Rule Id="SA1635" Action="Warning" />          <!-- File header should have copyright text -->
         <Rule Id="SA1636" Action="Warning" />          <!-- File header copyright text should match -->
