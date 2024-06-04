@@ -1531,10 +1531,10 @@
         <Rule Id="S1306" Action="Warning" />
         <Rule Id="S1307" Action="Warning" />
         <Rule Id="S1308" Action="Warning" />
-        <Rule Id="S1309" Action="Warning" />
+        <Rule Id="S1309" Action="Info" />
         <Rule Id="S1310" Action="Warning" />
         <Rule Id="S1311" Action="Warning" />
-        <Rule Id="S1312" Action="Warning" />
+        <Rule Id="S1312" Action="Info" />
         <Rule Id="S1313" Action="Warning" />
         <Rule Id="S1314" Action="Warning" />
         <Rule Id="S1315" Action="Warning" />

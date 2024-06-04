@@ -14,9 +14,13 @@ public static class SubscribeExtension
 
         domainObject.Events += (_, args) =>
         {
+#pragma warning disable S4462
+#pragma warning disable VSTHRD002
             publisher.Publish(args)
                 .GetAwaiter()
                 .GetResult();
+#pragma warning restore VSTHRD002
+#pragma warning restore S4462
         };
     }
 }

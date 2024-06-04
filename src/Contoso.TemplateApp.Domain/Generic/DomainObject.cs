@@ -2,11 +2,17 @@
 
 namespace Contoso.TemplateApp.Domain.Generic;
 
-public abstract class DomainObject
+public class DomainObject
 {
+    protected DomainObject()
+    {
+    }
+
     public event EventHandler<DomainEventArgs>? Events;
 
+#pragma warning disable CA1030
     protected void RaiseEvent(DomainEventArgs @event)
+#pragma warning restore CA1030
     {
         this.Events?.Invoke(this, @event);
     }
