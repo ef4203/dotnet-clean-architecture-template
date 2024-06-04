@@ -5,7 +5,7 @@ namespace Contoso.TemplateApp.Application;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-public static class BuilderExtension
+public static class AppBuilderExtension
 {
     public static void AddApplicationServices(this WebApplicationBuilder builder)
     {
@@ -14,7 +14,7 @@ public static class BuilderExtension
         builder.Services.AddMediatR(
             x =>
             {
-                x.RegisterServicesFromAssembly(typeof(BuilderExtension).Assembly);
+                x.RegisterServicesFromAssembly(typeof(AppBuilderExtension).Assembly);
             });
     }
 }

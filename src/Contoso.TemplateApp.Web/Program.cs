@@ -3,6 +3,7 @@
 namespace Contoso.TemplateApp.Web;
 
 using Contoso.TemplateApp.Application;
+using Contoso.TemplateApp.Infrastructure;
 
 public static class Program
 {
@@ -12,6 +13,7 @@ public static class Program
 
         builder.Services.AddControllers();
         builder.AddApplicationServices();
+        builder.AddInfrastructureService();
 
         var app = builder.Build();
 

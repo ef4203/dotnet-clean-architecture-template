@@ -19,6 +19,6 @@ public sealed partial class SimpleEventArgsHandler(ILogger<SimpleEventArgsHandle
         return Task.CompletedTask;
     }
 
-    [LoggerMessage(LogLevel.None, "Simple event - {Message}")]
+    [LoggerMessage(LogLevel.Information, "Simple event - {Message}")]
     private partial void LogSimpleEvent(string message);
 }
