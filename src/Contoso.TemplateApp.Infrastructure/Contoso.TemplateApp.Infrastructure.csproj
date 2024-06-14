@@ -7,4 +7,5 @@
     <ItemGroup>
         <ProjectReference Include="..\Contoso.TemplateApp.Application\Contoso.TemplateApp.Application.csproj"/>
     </ItemGroup>
+
 </Project>

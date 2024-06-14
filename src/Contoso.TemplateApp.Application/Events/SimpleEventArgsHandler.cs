@@ -6,7 +6,8 @@ using Contoso.TemplateApp.Domain.Events;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-public sealed partial class SimpleEventArgsHandler(ILogger<SimpleEventArgsHandler> logger)
+public sealed partial class SimpleEventArgsHandler(
+    ILogger<SimpleEventArgsHandler> logger)
     : INotificationHandler<SimpleEventArgs>
 {
     private readonly ILogger<SimpleEventArgsHandler> logger = logger
