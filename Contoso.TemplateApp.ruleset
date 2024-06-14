@@ -62,7 +62,7 @@
         <Rule Id="SA1123" Action="Warning" />          <!-- Do not place regions within elements -->
         <Rule Id="SA1124" Action="Warning" />          <!-- Do not use regions -->
         <Rule Id="SA1125" Action="Warning" />          <!-- Use shorthand for nullable types -->
-        <Rule Id="SA1126" Action="None" />             <!-- Prefix calls correctly -->
+        <Rule Id="SA1126" Action="Warning" />          <!-- Prefix calls correctly -->
         <Rule Id="SA1127" Action="Warning" />          <!-- Generic type constraints should be on their own line -->
         <Rule Id="SA1128" Action="Warning" />          <!-- Put constructor initializers on their own line -->
         <Rule Id="SA1129" Action="Warning" />          <!-- Do not use default value type constructor -->
@@ -122,7 +122,7 @@
         <Rule Id="SA1119" Action="Warning" />          <!-- Statement should not use unnecessary parenthesis -->
         <Rule Id="SA1400" Action="Warning" />          <!-- Access modifier should be declared -->
         <Rule Id="SA1401" Action="Warning" />          <!-- Fields should be private -->
-        <Rule Id="SA1402" Action="None" />             <!-- File may only contain a single type -->
+        <Rule Id="SA1402" Action="Hint" />             <!-- File may only contain a single type -->
         <Rule Id="SA1403" Action="Warning" />          <!-- File may only contain a single namespace -->
         <Rule Id="SA1404" Action="Warning" />          <!-- Code analysis suppression should have justification -->
         <Rule Id="SA1405" Action="Warning" />          <!-- Debug.Assert should provide message text -->
