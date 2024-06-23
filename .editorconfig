@@ -124,6 +124,7 @@ csharp_style_unused_value_expression_statement_preference = discard_variable:sil
 # 'using' directive preferences
 csharp_using_directive_placement = inside_namespace
 csharp_style_namespace_declarations = file_scoped
+csharp_qualified_using_at_nested_scope = true
 
 #### C# Formatting Rules ####
 
